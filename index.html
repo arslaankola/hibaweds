@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding Invitation — Arslaan & Hiba</title>
+<title>Invitation — Arslaan & Hiba</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -202,17 +202,19 @@ section { position:relative; z-index:1; padding:76px 20px; transition:background
 .family-section { background:var(--bg-mid); }
 .family-grid { display:grid; grid-template-columns:1fr auto 1fr; gap:28px 36px; align-items:start; }
 @media(max-width:580px){
-  .family-grid { grid-template-columns:1fr 1fr; gap:24px 12px; }
-  .family-sep  {
-    grid-column:1/-1;
+  .family-grid {
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+  .family-grid .family-block { text-align:center; }
+  .family-sep {
     flex-direction:row !important;
     align-items:center;
     justify-content:center;
     gap:8px;
-    padding:6px 0;
   }
   .family-sep .family-sep-line {
-    width:50px !important;
+    width:60px !important;
     height:1px !important;
     background:linear-gradient(90deg,transparent,var(--border),transparent) !important;
   }
